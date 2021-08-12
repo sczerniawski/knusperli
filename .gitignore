@@ -4,3 +4,5 @@
 /bazel-knusperli/
 /bazel-out/
 /bazel-testlogs/
+/knusperli
+/libknusperli.so
