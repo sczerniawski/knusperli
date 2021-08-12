@@ -13,3 +13,6 @@ knusperli: $(SRC) $(HDR) decode.cc
 
 libknusperli.so: $(SRC) $(HDR) libknusperli.cc
 	g++ -fPIC -O3 $(SRC) libknusperli.cc -shared -o libknusperli.so
+
+test:
+	python3 knusperli.py

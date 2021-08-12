@@ -31,3 +31,9 @@ def imread(path_or_bytes):
         raise RuntimeError('Failed to decode jpeg')
 
     return rgb
+
+
+if __name__ == '__main__':
+    decoded = imread('test.jpeg')
+    reference = np.fromfile('test.bin', dtype=np.uint8).reshape((201, 251, 3))
+    assert np.all(decoded == reference)
