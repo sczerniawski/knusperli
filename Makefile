@@ -7,7 +7,7 @@ headers := lodepng.h preprocess_downsample.h gamma_correct.h \
 	       jpeg_huffman_decode.h jpeg_data_reader.h jpeg_data_decoder.h \
 	       jpeg_error.h color_transform.h
 
-CXXFLAGS ?= -O3
+CXXFLAGS ?= -O3 -flto
 
 all: knusperli libknusperli.so
 
